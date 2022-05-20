@@ -1,0 +1,203 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+
+
+
+@layer components {
+
+    body{
+
+      @apply  h-full bg-black min-h-screen relative;
+
+    }
+
+    main{
+
+      @apply pt-12  grid-in-main
+
+
+    }
+
+    .main__h1{
+
+      @apply text-center text-gold text-6xl font-bold mt-2 pt-3 pb-5 m-auto font-days2 pt-5
+
+    }
+
+    .header{
+
+      @apply  p-2 mt-6 mb-6 m-auto grid-in-header
+
+
+    }
+
+
+    .header__grid{
+
+      @apply container flex justify-around py-8 mx-auto text-white mt-2  h-3 mb-2
+
+    }
+
+    .header__a{
+
+      @apply basis-1/2 flex flex-row-reverse text-white 
+
+
+    }
+
+
+
+    .header__a2{
+
+      @apply p-2 font-days   hover:text-gold hover:underline 
+    }
+
+    .grid__imag{
+
+
+      @apply w-1/2 overflow-hidden sm:my-1 sm:px-1 text-white mx-auto 
+
+    }
+    .grid__h2{
+
+      @apply text-white font-days text-2xl
+
+
+    }
+
+    .header__img{
+
+      @apply h-16
+
+
+    }
+
+    .grid__h2{
+
+      @apply w-1/2 overflow-hidden sm:my-1 sm:px-1 text-white mx-auto text-center 
+
+
+    }
+
+    .main__grid{
+
+
+      @apply grid grid-cols-2 mx-auto text-center
+
+
+    }
+
+
+
+    .main__grid{
+
+      @apply container flex justify-around py-8 mx-auto text-white mt-2  mb-2
+
+    }
+
+
+    .footerTab{
+
+      @apply flex flex-wrap text-sm font-medium text-center ml-3 mr-3 text-white p-2 m-auto border-b border-gray-200 
+
+
+    }
+
+    .horario{
+
+      @apply ml-5 text-white p-3
+
+
+    }
+
+    .enlace{
+
+      @apply mr-2
+
+    }
+    .footer{
+
+      @apply  grid-in-footer
+
+    }
+
+    .divTicket{
+
+
+      @apply bg-white lg:w-8/12  rounded-lg mx-auto mt-7 mb-52
+
+
+    }
+
+    .main__div{
+
+      @apply ml-5 mr-5 mt-5
+
+
+    }
+
+    .form__div{
+
+      @apply flex flex-col text-lg 
+
+    }
+
+    .form__label{
+
+      @apply text-lg p-2 ml-20
+
+
+    }
+
+
+    .form__input{
+
+      @apply bg-gray-400 p-2 ml-20 pl-1 py-2 md:py-4 focus:outline-none w-96 rounded-2xl
+
+
+    }
+
+
+    .form__button{
+
+      @apply bg-blue-600 p-2 rounded-2xl  mt-2  ml-20 w-96 py-2 md:py-4  sm:w-36  focus:outline-none  rounded-2xl
+
+    }
+
+    .form__canvas{
+
+      @apply ml-12
+
+
+    }
+
+    .form__usuario{
+
+      @apply ml-12
+
+
+    }
+
+
+    .form__codigo{
+
+      @apply ml-12 pb-12
+
+
+    }
+
+    .grid__imag{
+
+      @apply m-auto w-1/2
+
+
+    }
+
+
+  }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <script type = "module" src="./assets/scripts/main.js"></script> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nova+Cut&family=UnifrakturCook:wght@700&display=swap">
+  <script defer src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
+  <title>¡Entra en el sorteo!</title>
+</head>
+<body>
+  <include src="./views/heather.html"></include>
+          <section class="main">
+            <div class="divTicket">
+                <h1 class="main__h1">¡Entra en el sorteo!</h1>
+
+                 
+                <p class="main__div">Solicita tu codigo para participar en el sorteo de unas camisetas
+                    de los grupos que van a participar en el festival, son límitadas!!</p>
+
+                <form class="form__div" onsubmit=" false;">
+                  <div >
+                    <label class="form__label">Introduce tu nombre</label><br>
+                  </div>
+                  <div >
+                    <input type="text" id="nombre" class="form__input"  />
+                  </div>
+                  <div >
+                    <label class="form__label ">Introduce tu apellido</label><br>
+                  </div>
+                  <div >
+                    <input type="text" id="apellido" class="form__input" />
+
+                  </div>
+                  <button type="button"  value="Generar codigo" id="code" readonly name="Genera" onclick="code()" class="form__button">Generar codigo</button>
+
+                </form>
+                <p class="main__error" id="error"></p>
+                <canvas class="form__canvas" id="myCanvas" ></canvas>
+                <p class="form__usuario" id="usuario"></p>
+                <p class="form__codigo" id="codigo" ></p>
+              </div>
+
+              
+
+          </section>
+          <include src="./views/footer.html"></include>
+</body>
+</html>
